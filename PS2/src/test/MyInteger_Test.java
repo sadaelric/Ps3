@@ -7,9 +7,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
+import Account.Account
 public class MyInteger_Test {
-
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -28,7 +28,12 @@ public class MyInteger_Test {
 
 	@Test
 	public void test() {
-		assertTrue(1==1);
+		myInt = new Account(1112,2000,0.045);
+		myInt.Withdraw(2500);	
+		myInt.Deposit(3000);
+		System.out.println("Balance ="+myInt.Balance);
+		System.out.println("Monthly Interest rate =" +getMonthlyInterestRate);
+		System.out.println("Date Created"+dataCreated);
 	}
 
 }
